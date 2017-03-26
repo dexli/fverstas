@@ -1,0 +1,142 @@
+html {}
+body {font-family:arial,verdana,sans-serif;
+	color:black;
+	background-color:rgb(70,70,70)}
+	
+a:link{color:rgb(128,129,255)}
+a:visited{color:rgb(84,112,181)}
+a:hover{color:silver}
+
+a{
+	padding-top:2px;
+	padding-bottom:2px;
+	text-decoration:none
+}
+
+a.vlista{color:black;
+	}
+	
+#linkit {
+	padding-left:10%;
+}
+
+
+#oikeamargin {padding-left: 10%}
+
+#osaborder {border-color:rgb(247, 150, 70);
+	border-style:solid;
+	border-width:2px;
+	}
+
+b { color:white}
+
+p {color:black;
+	word-spacing:0.3em;
+	}
+	
+
+table {
+	
+	}
+
+
+
+ul {
+	padding-left:15%
+}
+
+.osataulukko {
+	width:570px
+	}
+	
+.osataulukkovasen {
+	width:75%;
+	}
+
+.osataulukkooikea {
+	width:25%;
+	
+	}
+
+.taulukko{
+	align:center;
+	width:950px;
+	height:700px;
+	border-color:rgb(247, 150, 70);
+	border-style:solid;
+	border-width:3px;
+	}
+
+.tyhja {
+	height: 20px;
+	}
+
+.yla {		width:auto;
+			height:30px;
+								
+			}
+.ylak {		width:auto;
+			height:30px;
+			background-color:rgb(247, 150, 70);					
+			}
+
+.vasen {
+			width:140px;
+			height:auto;
+			background-color:rgb(232, 114, 8);
+	}
+
+.keski {	width:auto;
+			height:auto;
+			background-color:rgb(255,255,255);
+			}
+
+
+.oikea {	width:270px;
+			height:auto;
+			background-color:rgb(254,245,235)
+			}
+
+.oikeas {	width:100px;
+			height:auto;
+			background-color:rgb(254,245,235)
+			
+			}
+
+
+.ala {
+			width:auto;
+			height:30px;
+			text-align:left;
+			
+			}
+			
+.alak {
+			width:auto;
+			height:30px;
+			text-align:left;
+			background-color:rgb(247, 150, 70);
+			}
+
+.keskitys{	text-align:center;
+			vertical-align:middle;
+			}
+
+#keskitysk{	text-align:center;
+			vertical-align:middle;
+			}
+
+
+.tausta { 	background-color:rgb(254,245,235);
+			text-align:center;
+			vertical-align:middle;
+			}
+
+#kuva {background-image:url('logo3.jpg');
+		background-repeat:repeat;
+		height:100%;
+	}
+
+.loppu {
+	clear:right;
+}
