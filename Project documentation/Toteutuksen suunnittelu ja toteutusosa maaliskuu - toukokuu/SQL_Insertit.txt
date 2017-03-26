@@ -1,0 +1,555 @@
+INSERT INTO Liitokset
+VALUES(
+'1'
+,'maasto');
+
+INSERT INTO Liitokset
+VALUES(
+'2'
+,'maantie');
+
+INSERT INTO asiakas
+VALUES(
+'jorma.tukeva@hotmale.com'
+,'tuksu'
+,'Jorma'
+,'Tukeva'
+,'mies'
+,'0404567321'
+,'Kivitie 3'
+,'Helsinki'
+,'00950');
+
+INSERT INTO asiakas
+VALUES(
+'timo.susi@hotmail.com'
+,'hukka'
+,'Timo'
+,'Susi'
+,'mies'
+,'0404593287'
+,'Hukkakuja 2'
+,'Helsinki'
+,'00960');
+
+INSERT INTO asiakas
+VALUES(
+'sini.vuokko@gmail.com'
+,'kukka'
+,'Sini'
+,'Vuokko'
+,'nainen'
+,'0508458726'
+,'Unikkotie 1'
+,'Ähtäri'
+,'36700');
+
+INSERT INTO asiakas
+VALUES(
+'saara.skuuppinen@gmail.com'
+,'skuuppis'
+,'Saara'
+,'Skuuppinen'
+,'nainen'
+,'0509873254'
+,'Trampoliinikuja 2'
+,'Espoo'
+,'00530');
+
+INSERT INTO haarukka
+VALUES(
+'2001'
+,'musta'
+,'maasto'
+,'Kona Project 2'
+,'81.16'
+,'1');
+
+INSERT INTO haarukka
+VALUES(
+'2002'
+,'musta'
+,'maasto'
+,'Charge Nozzle Fork'
+,'115.94'
+,'1');
+
+INSERT INTO haarukka
+VALUES(
+'2003'
+,'musta'
+,'maantie'
+,'Ritchey WCS Carbon'
+,'370.00'
+,'2');
+
+INSERT INTO haarukka
+VALUES(
+'2004'
+,'musta'
+,'maantie'
+,'Charge Scissor Fork'
+,'104.35'
+,'2');
+
+INSERT INTO runko
+VALUES(
+'1001'
+,'musta'
+,'maasto'
+,'S'
+,'Chumba Racing VF2'
+,'1790.00'
+,'1');
+
+INSERT INTO runko
+VALUES(
+'1002'
+,'musta'
+,'maasto'
+,'S'
+,'Commencal VIP Ti'
+,'1100.00'
+,'1');
+
+INSERT INTO runko
+VALUES(
+'1003'
+,'musta'
+,'maasto'
+,'M'
+,'Commencal VIP Ti'
+,'1100.00'
+,'1');
+
+INSERT INTO runko
+VALUES(
+'1004'
+,'musta'
+,'maasto'
+,'L'
+,'Commencal VIP Ti'
+,'1100.00'
+,'1');
+
+INSERT INTO runko
+VALUES(
+'1005'
+,'valkoinen'
+,'maasto'
+,'M'
+,'Commencal VIP Ti'
+,'1100.00'
+,'1');
+
+INSERT INTO runko
+VALUES(
+'1006'
+,'valkoinen'
+,'maasto'
+,'L'
+,'Commencal VIP Ti'
+,'1100.00'
+,'1');
+
+INSERT INTO runko
+VALUES(
+'1007'
+,'musta-punainen'
+,'maantie'
+,'S'
+,'BMC Pro Machine'
+,'1590.00'
+,'2');
+
+INSERT INTO runko
+VALUES(
+'1008'
+,'musta-punainen'
+,'maantie'
+,'M'
+,'BMC Pro Machine'
+,'1590.00'
+,'2');
+
+INSERT INTO runko
+VALUES(
+'1009'
+,'musta-punainen'
+,'maantie'
+,'L'
+,'BMC Pro Machine'
+,'1590.00'
+,'2');
+
+INSERT INTO runko
+VALUES(
+'1010'
+,'valkoinen'
+,'maantie'
+,'S'
+,'Eddy Merckx EMX-3'
+,'2271.43'
+,'2');
+
+INSERT INTO runko
+VALUES(
+'1011'
+,'valkoinen'
+,'maantie'
+,'M'
+,'Eddy Merckx EMX-3'
+,'2271.43'
+,'2');
+
+INSERT INTO runko
+VALUES(
+'1012'
+,'punainen'
+,'maantie'
+,'M'
+,'Eddy Merckx EMX-3'
+,'2271.43'
+,'2');
+
+INSERT INTO runko
+VALUES(
+'1013'
+,'punainen'
+,'maantie'
+,'L'
+,'Eddy Merckx EMX-3'
+,'2271.43'
+,'2');
+
+INSERT INTO tanko
+VALUES(
+'3001'
+,'musta'
+,'maantie'
+,'40'
+,'Ritchey WCS Carbon Logic II Road Bar'
+,'266.68'
+,'2');
+
+INSERT INTO tanko
+VALUES(
+'3002'
+,'musta'
+,'maantie'
+,'44'
+,'Ritchey WCS Carbon Logic II Road Bar'
+,'266.68'
+,'2');
+
+INSERT INTO tanko
+VALUES(
+'3003'
+,'musta'
+,'maantie'
+,'42'
+,'Ritchey WCS Road Logic'
+,'34.77'
+,'2');
+
+INSERT INTO tanko
+VALUES(
+'3004'
+,'kulta'
+,'maasto'
+,'71'
+,'Renthal Fat Bar'
+,'69.56'
+,'1');
+
+INSERT INTO tanko
+VALUES(
+'3005'
+,'musta'
+,'maasto'
+,'67'
+,'Renthal Jump Bar'
+,'52.17'
+,'1');
+
+INSERT INTO tanko
+VALUES(
+'3006'
+,'musta'
+,'maasto'
+,'68'
+,'Renthal Jump Bar'
+,'52.17'
+,'1');
+
+INSERT INTO tanko
+VALUES(
+'3007'
+,'musta'
+,'maasto'
+,'69'
+,'Renthal Jump Bar'
+,'52.17'
+,'1');
+
+INSERT INTO polkimet
+VALUES(
+'4001'
+,'hopea-musta'
+,'maantie'
+,'Token Track'
+,'46.37');
+
+INSERT INTO polkimet
+VALUES(
+'4002'
+,'hopea'
+,'maantie'
+,'MKS Sylvan'
+,'28.98');
+
+INSERT INTO polkimet
+VALUES(
+'4003'
+,'musta'
+,'maasto'
+,'Shimano MX30'
+,'57.97');
+
+INSERT INTO polkimet
+VALUES(
+'4004'
+,'musta'
+,'maasto'
+,'Kona Wah Wah'
+,'75.36');
+
+INSERT INTO vaihteet
+VALUES(
+'5001'
+,'maasto'
+,'Shimano M580 Deore LX Dual Control STI Set 8-Speed'
+,'46.37');
+
+INSERT INTO vaihteet
+VALUES(
+'5002'
+,'maasto'
+,'SRAM X3 Trigger Shifter Set 7-Speed'
+,'34.77');
+
+
+INSERT INTO vaihteet
+VALUES(
+'5003'
+,'maantie'
+,'Shimano Ultegra SL STI Set 10-Speed'
+,'197.11');
+
+
+INSERT INTO vaihteet
+VALUES(
+'5004'
+,'maantie'
+,'Shimano 2300 STI Set 9-Speed'
+,'127.54');
+
+INSERT INTO ketjut
+VALUES(
+'6001'
+,'speed-7/8'
+,'112'
+,'SRAM PC870'
+,'22.02');
+
+INSERT INTO ketjut
+VALUES(
+'6002'
+,'speed-9'
+,'114'
+,'Shimano Tiagra'
+,'23.18');
+
+INSERT INTO ketjut
+VALUES(
+'6003'
+,'speed-10'
+,'114'
+,'SRAM PC1090'
+,'40.57');
+
+INSERT INTO jarrut
+VALUES(
+'7001'
+,'levy'
+,'Shimano Deore'
+,'81.16');
+
+INSERT INTO jarrut
+VALUES(
+'7002'
+,'levy'
+,'Avid XX'
+,'309.59');
+
+
+INSERT INTO jarrut
+VALUES(
+'7003'
+,'v-jarru'
+,'Shimano M770 XT'
+,'31.30');
+
+
+INSERT INTO jarrut
+VALUES(
+'7004'
+,'v-jarru'
+,'Shimano Acera M422'
+,'16.22');
+
+INSERT INTO satula
+VALUES(
+'8001'
+,'leopardi'
+,'maasto'
+,'M'
+,'SDG Bel Air RL'
+,'49.00');
+
+INSERT INTO satula
+VALUES(
+'8002'
+,'leopardi'
+,'maasto'
+,'L'
+,'SDG Bel Air RL'
+,'49.00');
+
+INSERT INTO satula
+VALUES(
+'8003'
+,'käärmeennahka'
+,'maasto'
+,'M'
+,'SDG Bel Air RL'
+,'49.00');
+
+INSERT INTO satula
+VALUES(
+'8004'
+,'käärmeennahka'
+,'maasto'
+,'M'
+,'SDG Bel Air RL'
+,'49.00');
+
+INSERT INTO satula
+VALUES(
+'8005'
+,'harmaa-valkoinen'
+,'maantie'
+,'S'
+,'SDG Ti-Fly'
+,'80.00');
+
+INSERT INTO satula
+VALUES(
+'8006'
+,'harmaa-valkoinen'
+,'maantie'
+,'M'
+,'SDG Ti-Fly'
+,'80.00');
+
+INSERT INTO satula
+VALUES(
+'8007'
+,'harmaa-valkoinen'
+,'maantie'
+,'L'
+,'SDG Ti-Fly'
+,'80.00');
+
+INSERT INTO satula
+VALUES(
+'8008'
+,'musta'
+,'maantie'
+,'M'
+,'Ritchey Streem Comp'
+,'29.00');
+
+INSERT INTO renkaat
+VALUES(
+'9001'
+,'maasto'
+,'26'
+,'Maxxis Larsen TT'
+,'31.30');
+
+INSERT INTO renkaat
+VALUES(
+'9002'
+,'maasto'
+,'26'
+,'Schwalbe Rocket Ron'
+,'34.77');
+
+INSERT INTO renkaat
+VALUES(
+'9003'
+,'maantie'
+,'26'
+,'Specialized Armadillo'
+,'28.98');
+
+INSERT INTO renkaat
+VALUES(
+'9004'
+,'maantie'
+,'26'
+,'Bontrager Race Lite'
+,'23.18');
+
+INSERT INTO vanteet
+VALUES(
+'1101'
+,'maasto'
+,'26'
+,'Mavic Deemax Ultimate'
+,'887.04');
+
+INSERT INTO vanteet
+VALUES(
+'1102'
+,'maasto'
+,'26'
+,'Specialized Traversee'
+,'695.72');
+
+INSERT INTO vanteet
+VALUES(
+'1103'
+,'maantie'
+,'26'
+,'Mavic Cosmic Carbon'
+,'887.04');
+
+INSERT INTO vanteet
+VALUES(
+'1104'
+,'maantie'
+,'26'
+,'Roval Pave SL'
+,'289.88');
+
+
+
+
+
+
+
+
+
+

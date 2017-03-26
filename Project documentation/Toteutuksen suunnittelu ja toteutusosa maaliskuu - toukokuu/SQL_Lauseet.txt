@@ -1,0 +1,177 @@
+DROP TABLE Pyorasuunnitelma;
+
+DROP TABLE Asiakas;
+
+DROP TABLE Haarukka;
+
+DROP TABLE Runko;
+
+DROP TABLE Tanko;
+
+DROP TABLE Liitokset;
+
+DROP TABLE Polkimet;
+
+DROP TABLE Vaihteet;
+
+DROP TABLE Ketjut;
+
+DROP TABLE Jarrut;
+
+DROP TABLE Satula;
+
+DROP TABLE Vanteet;
+
+DROP TABLE Renkaat;
+
+
+DROP SEQUENCE seq_suunnitelma;
+
+
+CREATE TABLE Asiakas (
+	sahkoposti		VARCHAR(50) NOT NULL,
+	salasana		VARCHAR(20) NOT NULL,
+	etunimi			VARCHAR(20) NOT NULL,
+	sukunimi		VARCHAR(30) NOT NULL,
+	sukupuoli		VARCHAR(20) NOT NULL,
+	puhelinnumero		VARCHAR(20) NOT NULL,
+	katuosoite		VARCHAR(20) NOT NULL,
+	postitmp		VARCHAR(20) NOT NULL,
+	postinro		VARCHAR(20) NOT NULL,
+	PRIMARY KEY		(sahkoposti)
+);
+
+
+
+CREATE TABLE Liitokset (
+	liitos_id	INTEGER NOT NULL,
+	tyyppi		VARCHAR(10) NOT NULL,
+	PRIMARY KEY		(liitos_id)
+);
+CREATE TABLE Haarukka (
+	haarukka_id	INTEGER NOT NULL,
+	vari		VARCHAR(20) NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	liitos_id	INTEGER NOT NULL,
+	PRIMARY KEY	(haarukka_id),
+	FOREIGN KEY (liitos_id)	REFERENCES Liitokset(liitos_id)
+);
+
+CREATE TABLE Runko(
+	runko_id	INTEGER NOT NULL,
+	vari		VARCHAR(20) NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	koko		VARCHAR(1) NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	liitos_id	INTEGER NOT NULL,
+	PRIMARY KEY	(runko_id),
+	FOREIGN KEY (liitos_id)	REFERENCES Liitokset(liitos_id)
+);
+
+CREATE TABLE Tanko(
+	tanko_id	INTEGER NOT NULL,
+	vari		VARCHAR(20) NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	koko		INTEGER NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	liitos_id	INTEGER NOT NULL,
+	PRIMARY KEY	(tanko_id),
+	FOREIGN KEY (liitos_id)	REFERENCES Liitokset(liitos_id)
+);
+CREATE TABLE Polkimet (
+	polkimet_id	INTEGER NOT NULL,
+	vari		VARCHAR(20) NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	PRIMARY KEY		(polkimet_id)
+);
+
+CREATE TABLE Vaihteet(
+	vaihteet_id	INTEGER NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	PRIMARY KEY		(vaihteet_id)
+);
+
+CREATE TABLE Ketjut(
+	ketjut_id	INTEGER NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	lenkit_lkm	INTEGER NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	PRIMARY KEY		(ketjut_id)
+);
+
+CREATE TABLE Jarrut(
+	jarrut_id	INTEGER NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	PRIMARY KEY		(jarrut_id)
+);
+
+CREATE TABLE Satula(
+	satula_id	INTEGER NOT NULL,
+	vari		VARCHAR(20) NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	koko		VARCHAR(1) NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	PRIMARY KEY		(satula_id)
+);
+
+CREATE TABLE Renkaat(
+	renkaat_id	INTEGER NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	koko		INTEGER NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	PRIMARY KEY		(renkaat_id)
+);
+
+CREATE TABLE Vanteet(
+	vanteet_id	INTEGER NOT NULL,
+	tyyppi		VARCHAR(30) NOT NULL,
+	koko		INTEGER NOT NULL,
+	merkki		VARCHAR(100) NOT NULL,
+	hinta		DECIMAL(8,2) NOT NULL,
+	PRIMARY KEY		(vanteet_id)
+);
+
+CREATE TABLE Pyorasuunnitelma (
+	pyorasuunnitelma_id	INTEGER NOT NULL,
+	kokonaishinta		DECIMAL(8,2) NOT NULL,
+	pvm			DATE NOT NULL,
+	asiakas_id		VARCHAR(50) NOT NULL,
+	polkimet_id		INTEGER NOT NULL,
+	vaihteet_id		INTEGER NOT NULL,
+	haarukka_id		INTEGER NOT NULL,
+	runko_id		INTEGER NOT NULL,
+	ketjut_id		INTEGER NOT NULL,
+	tanko_id		INTEGER NOT NULL,
+	jarrut_id		INTEGER NOT NULL,
+	satula_id		INTEGER NOT NULL,
+	renkaat_id		INTEGER NOT NULL,
+	vanteet_id		INTEGER NOT NULL,
+	PRIMARY KEY		(pyorasuunnitelma_id),
+	FOREIGN KEY (asiakas_id)	REFERENCES Asiakas(sahkoposti),
+	FOREIGN KEY (polkimet_id)	REFERENCES Polkimet(polkimet_id),
+	FOREIGN KEY (vaihteet_id)	REFERENCES Vaihteet(vaihteet_id),
+	FOREIGN KEY (haarukka_id)	REFERENCES Haarukka(haarukka_id),
+	FOREIGN KEY (runko_id)		REFERENCES Runko(runko_id),
+	FOREIGN KEY (ketjut_id)		REFERENCES Ketjut(ketjut_id),
+	FOREIGN KEY (tanko_id)		REFERENCES Tanko(tanko_id),
+	FOREIGN KEY (jarrut_id)		REFERENCES Jarrut(jarrut_id),
+	FOREIGN KEY (satula_id)		REFERENCES Satula(satula_id),
+	FOREIGN KEY (renkaat_id)	REFERENCES Renkaat(renkaat_id),
+	FOREIGN KEY (vanteet_id)	REFERENCES Vanteet(vanteet_id)
+
+);
+
+CREATE SEQUENCE seq_suunnitelma MINVALUE 1 INCREMENT BY 1;
